@@ -19,8 +19,8 @@ Nom_Ment VARCHAR(30),
 Fech_Grad DATE,
 Planeta VARCHAR(50),
 F_U_Comb VARCHAR(50),
-FOREING KEY (Cod_Peli) REFERENCES Peliculas (Cod_Peli),
-FOREING KEY (Cod_Actor) REFERENCES Actores (Cod_Actor)
+FOREIGN KEY (Cod_Peli) REFERENCES Peliculas (Cod_Peli),
+FOREIGN KEY (Cod_Actor) REFERENCES Actores (Cod_Actor)
 )ENGINE=innodb;
 
 CREATE TABLE Peliculas (
@@ -29,7 +29,7 @@ Titulo VARCHAR(100),
 Anio INTEGER,
 Director VARCHAR(50),
 Cod_Pers INTEGER,
-FOREING KEY (Cod_Pers) REFERENCES Personajes (Cod_Pers)
+FOREIGN KEY (Cod_Pers) REFERENCES Personajes (Cod_Pers)
 )ENGINE=innodb;
 
 CREATE TABLE Capitulos (
